@@ -1,0 +1,11 @@
+$mainBlue: #2f5572;
+
+body { margin: 0;}
+p{
+  color: $mainBlue;
+  text-align: center;
+  transform: rotate(50deg);
+  a{
+    color: black;
+  }
+}

@@ -11,6 +11,8 @@
 *.sass-cache
 node_modules/
 .tmp/
+.gitignore
+app/temp/
 
 # OS or Editor folders
 .DS_Store
