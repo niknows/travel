@@ -1,9 +1,10 @@
+//selected modules
 var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    postcss = require('gulp-postcss'),
+    watch = require('gulp-watch'), //monitor files and directories
+    postcss = require('gulp-postcss'), //css preprocessor
     autoprefixer = require('autoprefixer'),
-    cssvars = require('postcss-simple-vars'),
-    nested = require('postcss-nested');
+    cssvars = require('postcss-simple-vars'), //css variables support
+    nested = require('postcss-nested'); //enables nested css syntax
 
 //gulp needs a default task to start working
 //task name + what this task does
@@ -16,16 +17,20 @@ gulp.task("html",function(){
 });
 
 gulp.task("styles", function(){
+  //get info from file
 	return gulp.src('./app/assets/styles/style.css')
+  //applies postcss filters
   .pipe(postcss([cssvars, nested, autoprefixer]))
+  //create a new file containing filtered data
   .pipe(gulp.dest('./app/temp/styles'));
 });
 
+//watches for changes in index.html
 gulp.task('watch', function(){
 	watch('./app/index.html', function(){
 		gulp.start('html');
 	});
-
+//watches for any css file changes from any directory within /styles
 	watch('./app/assets/styles/**/*.css', function(){
 		gulp.start('styles');
 });
