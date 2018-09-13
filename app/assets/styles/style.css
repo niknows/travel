@@ -1,11 +1,11 @@
-$mainBlue: #2f5572;
-
-body { margin: 0;}
-p{
-  color: $mainBlue;
-  text-align: center;
-  transform: rotate(50deg);
-  a{
-    color: black;
-  }
+/*GLOBAL CSS - properties you want to spread across the elements*/
+body{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+@import "modules/_large-hero";
