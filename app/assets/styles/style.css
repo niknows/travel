@@ -1,3 +1,4 @@
 /*GLOBAL CSS - properties you want to spread across the elements*/
+@import "normalize.css";
+@import "base/_global";
 @import "modules/_large-hero";
-@import "base/_global.css";
