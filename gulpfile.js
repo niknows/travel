@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'), //css preprocessor
     autoprefixer = require('autoprefixer'),
     cssvars = require('postcss-simple-vars'), //css variables support
-    nested = require('postcss-nested'); //enables nested css syntax
+    nested = require('postcss-nested'), //enables nested css syntax
+    cssImport = require('postcss-import'); //watches for @import flag and injects the model content inside the main css file
 
 //gulp needs a default task to start working
 //task name + what this task does
