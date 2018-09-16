@@ -1,6 +1,5 @@
 /*GLOBAL CSS - properties you want to spread across the elements*/
 @import "modules/_large-hero";
-
 body{
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -9,5 +8,3 @@ img{
   max-width: 100%;
   height: auto;
 }
-
-;
