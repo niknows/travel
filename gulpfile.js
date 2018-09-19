@@ -5,8 +5,8 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     cssvars = require('postcss-simple-vars'), //css variables support
     nested = require('postcss-nested'), //enables nested css syntax
-    cssImport = require('postcss-import'); //watches for @import flag and injects the model content inside the main css file
-
+    cssImport = require('postcss-import'), //watches for @import flag and injects the model content inside the main css file
+    browserSync = require('browser-sync');
 //gulp needs a default task to start working
 //task name + what this task does
 gulp.task('default',function(){
