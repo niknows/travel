@@ -9,3 +9,7 @@
   left: 0;
   transform: translateY(-50%);
 }
+
+.large-hero h1{
+  font-weight: 300;
+}
