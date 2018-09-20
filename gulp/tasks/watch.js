@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-watch = require('gulp-watch'); //monitor files and directories
+watch = require('gulp-watch'), //monitor files and directories
+browserSync = require('browser-sync').create();
 
 //watches for changes in index.html
 gulp.task('watch', function(){
@@ -17,4 +18,8 @@ gulp.task('watch', function(){
 	watch('./app/assets/styles/**/*.css', function(){
 		gulp.start('cssInject');
   });
+});
+gulp.task('cssInject', ['styles'], function(){
+  return gulp.src('./app/temp/styles/style.css')
+  .pipe(browserSync.stream());
 });
