@@ -1,4 +1,5 @@
-watch = require('gulp-watch'), //monitor files and directories
+var gulp = require('gulp'),
+watch = require('gulp-watch'); //monitor files and directories
 
 //watches for changes in index.html
 gulp.task('watch', function(){
