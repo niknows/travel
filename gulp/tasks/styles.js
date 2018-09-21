@@ -11,5 +11,9 @@ gulp.task("styles", function(){
   //applies postcss filters
   .pipe(postcss([cssImport , cssvars, nested, autoprefixer])) //postcss modules
   //create a new file containing filtered data
+  .on('error',function(errorInfo){
+    console.log(errorInfo.toString());
+    this.emit('end');
+  })
   .pipe(gulp.dest('./app/temp/styles'));
 });
