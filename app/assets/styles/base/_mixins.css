@@ -3,3 +3,11 @@
     @mixin-content;
   }
 }
+
+@define-mixin atSmall{
+  @media(min-width: 530px){
+    @mixin-content;
+  }
+}
+
+/**/
