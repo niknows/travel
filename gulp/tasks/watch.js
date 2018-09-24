@@ -1,3 +1,4 @@
+/*WATCH TASKS*/
 var gulp = require('gulp'),
 watch = require('gulp-watch'), //monitor files and directories
 browserSync = require('browser-sync').create();
