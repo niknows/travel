@@ -1,1 +1,1 @@
-<h1>A project using advanced css</h1>
+<h1>A project using advanced CSS</h1>
