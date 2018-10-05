@@ -9,6 +9,10 @@
     max-width: 976px;
   }
 
+  &--large{
+    max-width: 1136px;
+  }
+
   .wrapper{
     padding-left: 0;
     padding-right: 0;
