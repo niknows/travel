@@ -1,1 +1,1 @@
-<h1>Travel webpage<h1>
+<h1>Travel Webpage<h1>
